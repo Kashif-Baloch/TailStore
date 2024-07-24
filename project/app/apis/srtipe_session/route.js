@@ -17,7 +17,7 @@ export async function POST(request) {
             submit_type: 'pay',
             payment_method_types: ['card'],
             billing_address_collection: 'auto',
-            shipping_options: [{ shipping_rate: "shr_1OAwEpEje7oP8vX4Yxa5RMCO" }, { shipping_rate: "shr_1OAwCCEje7oP8vX4OW6Jz7kz" }],
+            shipping_options: [{ shipping_rate: "your shipping rate key" }, { shipping_rate: "your shipping rate key" }],
             line_items: Object.keys(cartDetails).map((item) => {
                 return {
                     price_data: {
