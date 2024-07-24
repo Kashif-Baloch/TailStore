@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --b_bg: white;
+    --b_c: #575757;
+    --nav_c: white;
+    --s_b: #a5b4fc;
+    --s_t: #000;
+}
+
+[data-theme='dark'] {
+    --b_bg: #1f2937;
+    --b_c: white;
+    --nav_c: #111827;
+    --c_b: white;
+    --s_b: #1f2937;
+    --s_t: #fff;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    background-color: var(--b_bg);
+    color: var(--b_c);
+}
+
+.cardc {
+    color: var(--c_b);
+}
+
+.sidebarCart {
+    background: var(--s_b);
+    color: var(--s_t);
+}
+
+.navigt {
+    background-color: var(--nav_c);
+    color: var(--b_c);
+}
+
+::selection {
+    background: #a9abfd;
+    color: #000000;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ece7e7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6366f1;
+    border-radius: 2px;
+}
+
+.myScroll::-webkit-scrollbar {
+    width: 0px;
+}
+
+.rmsc::-webkit-scrollbar {
+    width: 0px;
+}
+
+.trans {
+    transition: all .50s;
+}
+
+.shod {
+    box-shadow: -3px -3px 109px -21px rgba(0, 0, 0, 0.56);
+    -webkit-box-shadow: -3px -3px 109px -21px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: -3px -3px 109px -21px rgba(0, 0, 0, 0.56);
+}
+
+.fam {
+    font-family: 'Courier New', Courier, monospace;
+}
